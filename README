@@ -1,0 +1,25 @@
+INFO: Continue processing the file inputFile\drop-1.json  with product Id 7d5883d6-fcc8-4c21-903c-520602712af4
+INFO: Establising DB connection
+INFO: Completed processing the file inputFile\drop-1.json  with product Id 7d5883d6-fcc8-4c21-903c-520602712af4
+INFO:  Power Tools   -  Artarmon  -  10
+INFO:  Power Tools   -  Artarmon  -  6
+INFO:  Power Tools   -  Artarmon  -  4
+INFO:  Power Tools   -  Notting Hill  -  43
+INFO:  Tools   -  Notting Hill  -  1
+INFO:  Power Tools   -  Oakleigh  -  7
+INFO: Moved the file to output location
+
+INFO: Discarding the file inputFile\drop-2.json with product id e3087133-4e73-4728-8c81-c0ee86ecf54c as recordcount or qtysum does not add up
+INFO:  Decking  -  Artarmon  -  6
+INFO:  Home Security Systems  -  Artarmon  -  5
+INFO: Moved the file to output location
+
+INFO: Continue processing the file inputFile\drop-3.json  with product Id 967a48c2-5674-4be8-aa0b-999f6a47dd0f
+INFO: Establising DB connection
+INFO: Completed processing the file inputFile\drop-3.json  with product Id 967a48c2-5674-4be8-aa0b-999f6a47dd0f
+INFO:  Power Tools   -  Artarmon  -  1
+INFO:  Power Tools   -  Oakleigh  -  5
+INFO:  Tiles   -  Oakleigh  -  1
+INFO: Moved the file to output location
+
+Process finished with exit code 0
