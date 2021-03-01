@@ -1,0 +1,30 @@
+version: '3'
+volumes:
+  database_data:
+    driver: local
+services:
+  postgres-db:
+    image: postgres
+    hostname: postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - database_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.app
+    restart: always
+    depends_on:
+      - postgres-db
+    links:
+      - postgres-db
+    ports:
+      - 4000:4000
+    environment:
+      WAIT_HOSTS: postgres-db:5432
